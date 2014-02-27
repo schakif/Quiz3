@@ -28,14 +28,14 @@ int main(int argc, char *argv[])
         NSDictionary *fruitSweetness = @{@"Apple": @3, @"Grape":@5, @"Pear":@8};
         NSLog(@"%@", fruitSweetness[@"Grape"]);
         NSUInteger myUInteger = 123;
-        NSLog(@"%lu", (unsigned long)myUInteger);
+        NSLog(@"%d", myUInteger);
         
         NSNumber *a = @10;
         NSNumber *b = @4;
         NSUInteger aInt = [a unsignedIntegerValue];
         NSUInteger bInt = [b unsignedIntegerValue];
         NSUInteger ab = aInt * bInt;
-        NSLog(@"%lu", (unsigned long)ab);
+        NSLog(@"%d", ab);
         
         NSString *lastName = @"Chakif";
         NSString *fullName = [[firstName stringByAppendingString:@" "] stringByAppendingString:lastName];
@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
             
         };
         
-        DayOfWeek currentDay;
+        DayOfWeek currentDay = FRI;
         
         void(^myFirstBlock)(void) = ^{
             NSLog(@"Hello World");
